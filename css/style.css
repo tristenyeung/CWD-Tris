@@ -1,0 +1,300 @@
+/* Tried using @font-face but file would not link. Linked the font instead.
+
+@font-face {
+    font-family: prstartk;
+    src: url(font/prstartk.ttf)
+}
+
+html {
+    font-family: prstartk;
+    background-color: black;
+    color: white;
+}
+
+*/
+
+html {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: #F9ED3F;
+}
+
+.wrapper {
+    justify-content: center;
+}
+
+.nav {
+    height: 80px;
+    text-align: center;
+}
+
+.nav ol {
+    margin: 0%;
+    padding: 10px;
+}
+
+.nav ol li {
+    display: inline-block;
+    margin: 15px 15px 0 0; 
+}
+
+.nav ol li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ol li a:hover {
+    color: #F9ED3F;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.home, .htp, .players, .highscores, .htp, .players, .footer {
+    text-align: center;
+}
+
+.home::after {
+    content: "......................................................................................................................" ;
+    color: #F9ED3F;
+}
+
+#logo {
+    margin-top: 0.5cm;
+    margin-bottom: 2cm;
+}
+
+#pmr {
+    transform: scaleX(-1);
+}
+
+.pacman-run img {
+    width: 50px;
+    height: 50px;
+}
+
+.pacman-run {
+    position: relative;
+    animation-name: pacmanrun;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pacmanrun {
+    0% {
+        transform: translate(1200px, 0px);
+    }
+
+    50% {
+        transform: translate(-1700px,0px);
+    }
+
+    100% {
+        transform: translate(-1700px,0px);
+    }
+}
+
+.pacman-run2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.pacman-run2 {
+    position: relative;
+    animation-name: pacmanrun2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    margin-bottom: 2cm;
+    
+}
+
+@keyframes pacmanrun2 {
+    0% {
+        transform: translate(-1500px, 0px);
+    }
+
+    50% {
+        transform: translate(-1500px, 0px);
+    }
+
+    100% {
+        transform: translate(1500px,0px);
+    }
+}
+
+.coins {
+    /* applies animation */
+    animation: fade-inout 0.8s infinite alternate;
+    /* styling the text */
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+@keyframes fade-inout{
+    0%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+.highscores ul {
+    margin: 0%;
+    padding: 10px;
+}
+
+.highscores ul li {
+    margin: 15px 15px 0 0; 
+    list-style: none;
+}
+
+.highscores h1 {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2cm;
+    margin-left: 1cm;
+}
+
+
+.highscores li:nth-child(4n+2) {
+    color: #FFA002;
+}
+
+.highscores li:nth-child(4n+3) {
+    color: #FF0401;
+}
+
+.highscores li:nth-child(4n+4) {
+    color:  turquoise;
+}
+
+.highscores li:nth-child(4n+5) {
+    color: #FF60B0;
+}
+
+.highscores::after {
+    content: "......................................................................................................................" ;
+    color: #F9ED3F;
+}
+
+.htp p {
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-bottom: 1cm;
+}
+
+.htp::after {
+    content: "......................................................................................................................" ;
+    color: #F9ED3F;
+}
+
+#big {
+    width: 100px;
+    height: 100px;
+}
+
+.pacman-chase img {
+    width: 50px;
+    height: 50px;
+}
+
+.pacman-chase {
+    position: relative;
+    animation-name: pacmanchase;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+@keyframes pacmanchase {
+    0% {
+        transform: translate(-1500px, 0px);
+    }
+
+    100% {
+        transform: translate(1700px,0px);
+    }
+}
+
+#simple {
+    color: #FFD300;
+}
+
+.players {
+    margin-top: 2cm;
+}
+
+.players img, span {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blinky, .pinky, .inky, .clyde, .eat, .fifty, .ten {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.players div:nth-of-type(1) {
+    color: #FF0401;
+}
+
+.players div:nth-of-type(2) {
+    color: #FF60B0;
+}
+
+.players div:nth-of-type(3) {
+    color: turquoise;
+}
+
+.players div:nth-of-type(4) {
+    color: #FFA002;
+}
+
+.eat img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.players img {
+    width: 50px;
+    height: 50px;
+}
+
+.bs {
+    height: 25px;
+    width: 25px;
+    background-color: #F9ED3F;
+}
+
+.ss {
+    height: 10px;
+    width: 10px;
+    background-color: #F9ED3F;
+}
+
+.fifty {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ten {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    font-size: 10px;
+}
